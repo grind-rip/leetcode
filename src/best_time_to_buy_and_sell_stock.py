@@ -7,6 +7,7 @@ NOTES
   * Use a sliding window. 'Start' is the current minimum price. 'End' is the
     current price.
 """
+
 import sys
 from typing import List
 

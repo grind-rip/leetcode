@@ -3,6 +3,7 @@
 
 https://leetcode.com/problems/two-sum
 """
+
 from unittest import TestCase
 
 from src.two_sum import Solution

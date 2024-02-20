@@ -6,6 +6,7 @@ https://leetcode.com/problems/two-sum
 NOTES
   * Use a hash table for complement lookups.
 """
+
 from typing import Dict, List
 
 
