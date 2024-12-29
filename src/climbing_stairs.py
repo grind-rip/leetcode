@@ -7,12 +7,10 @@ NOTES
   * Use dynamic programming and/or memoization.
 
 If the problem can be broken down into subproblems, and if it contains the
-optimal substructure property (i.e. its optimal solution can be constructed
+optimal substructure property (i.e., its optimal solution can be constructed
 efficiently from optimal solutions of its subproblems), it can be efficiently
 solved using dynamic programming.
 """
-
-from typing import Dict, List
 
 
 class Solution:
@@ -27,7 +25,7 @@ class Solution:
     """
 
     def climbStairs(self, n: int) -> int:
-        dp: List[int] = [0, 1, 2]
+        dp: list[int] = [0, 1, 2]
         for i in range(3, n + 1):
             dp.append(dp[i - 1] + dp[i - 2])
         return dp[n]
@@ -45,9 +43,9 @@ class MemoizationSolution:
     """
 
     def climbStairs(self, n: int) -> int:
-        memo: Dict[int, int] = {}
+        memo: dict[int, int] = {}
 
-        def _climbStairs(i: int, n: int, memo: Dict[int, int]) -> int:
+        def _climbStairs(i: int, n: int, memo: dict[int, int]) -> int:
             """
             Where 'i' is the current step, 'n' is the target step, and 'memo'
             is a hash table of previous calculations.
