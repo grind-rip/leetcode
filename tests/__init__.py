@@ -1,5 +1,5 @@
 """
-Tests for a collection of LeetCode problems.
+Tests for a collection of LeetCode solutions.
 
 See: https://leetcode.com
 """
