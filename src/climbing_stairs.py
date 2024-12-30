@@ -43,9 +43,9 @@ class MemoizationSolution:
     """
 
     def climbStairs(self, n: int) -> int:
-        memo: dict[int, int] = {}
+        memo: list[int] = [0] * n
 
-        def _climbStairs(i: int, n: int, memo: dict[int, int]) -> int:
+        def _climbStairs(i: int, n: int, memo: list[int]) -> int:
             """
             Where 'i' is the current step, 'n' is the target step, and 'memo'
             is a hash table of previous calculations.
@@ -60,9 +60,8 @@ class MemoizationSolution:
             # the combination is a valid path.
             if i == n:
                 return 1
-            # If 'i' (current step) exists in 'memo', reuse its value. It
-            # should be noted that we could also use an array here.
-            if i in memo:
+            # If memo[i] has been calculated (i.e., not 0), reuse its value.
+            if memo[i] > 0:
                 return memo[i]
             memo[i] = _climbStairs(i + 1, n, memo) + _climbStairs(i + 2, n, memo)
             return memo[i]
