@@ -11,3 +11,5 @@ A collection of LeetCode solutions
 [Climbing Stairs](./src/climbing_stairs.py)
 
 [Coin Change](./src/coin_change.py)
+
+[House Robber](./src/house_robber.py)
