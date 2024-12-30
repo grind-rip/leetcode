@@ -27,7 +27,7 @@ class TwoPointersSolution:
     def maxProfit(self, prices: list[int]) -> int:
         # Maintain two pointers, where `left` tracks the best possible buy time
         # and `right` tracks the possible sell time. It is important to note
-        # that these pointers represent different things
+        # that these pointers represent different things.
         left, right, max_profit = 0, 1, 0
 
         while right < len(prices):
