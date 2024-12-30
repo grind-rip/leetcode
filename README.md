@@ -9,3 +9,5 @@ A collection of LeetCode solutions
 [Binary Search](./src/binary_search.py)
 
 [Climbing Stairs](./src/climbing_stairs.py)
+
+[Coin Change](./src/coin_change.py)
