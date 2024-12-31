@@ -15,3 +15,5 @@ A collection of LeetCode solutions
 [Contains Duplicate](./src/contains_duplicate.py)
 
 [House Robber](./src/house_robber.py)
+
+[Two Sum](./src/two_sum.py)
