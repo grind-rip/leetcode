@@ -12,4 +12,6 @@ A collection of LeetCode solutions
 
 [Coin Change](./src/coin_change.py)
 
+[Contains Duplicate](./src/contains_duplicate.py)
+
 [House Robber](./src/house_robber.py)
