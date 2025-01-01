@@ -6,7 +6,7 @@ https://leetcode.com/problems/best-time-to-buy-and-sell-stock
 
 from unittest import TestCase
 
-from src.best_time_to_buy_and_sell_stock import NaiveSolution, OptimizedNaiveSolution, Solution, TwoPointersSolution
+from src.best_time_to_buy_and_sell_stock import NaiveSolution, OptimizedNaiveSolution, SlidingWindowSolution, Solution
 
 
 class TestSolution(TestCase):
@@ -23,18 +23,18 @@ class TestSolution(TestCase):
         assert Solution().maxProfit([2, 4, 1]) == exp
 
 
-class TestTwoPointersSolution(TestCase):
+class TestSlidingWindowSolution(TestCase):
     def test_1(self):
         exp = 5
-        assert TwoPointersSolution().maxProfit([7, 1, 5, 3, 6, 4]) == exp
+        assert SlidingWindowSolution().maxProfit([7, 1, 5, 3, 6, 4]) == exp
 
     def test_2(self):
         exp = 0
-        assert TwoPointersSolution().maxProfit([7, 6, 4, 3, 1]) == exp
+        assert SlidingWindowSolution().maxProfit([7, 6, 4, 3, 1]) == exp
 
     def test_3(self):
         exp = 2
-        assert TwoPointersSolution().maxProfit([2, 4, 1]) == exp
+        assert SlidingWindowSolution().maxProfit([2, 4, 1]) == exp
 
 
 class TestOptimizedNaiveSolution(TestCase):

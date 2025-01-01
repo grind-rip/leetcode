@@ -4,9 +4,18 @@
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock
 
 NOTES
-  * Use a sliding window or two pointers, where the left (buy) pointer keeps
-    track of the best possible buy time and the right (sell) pointer keeps
-    track of the possible sell time.
+  * Use a sliding window where the left (buy) pointer keeps track of the best
+    possible buy time and the right (sell) pointer keeps track of the possible
+    sell time.
+
+Sliding Window
+--------------
+The sliding window technique uses two pointers that maintain a "window" of
+elements that moves through an array or string in a specific way. The window
+can grow or shrink depending on certain conditions, but do not cross. This
+ensures that each value in the array is only accessed at most twice and the
+time complexity is still O(n). This approach is particularly useful when you
+need to find a subarray or substring that meets certain criteria.
 """
 
 import sys
@@ -23,7 +32,7 @@ class Solution:
         return max_profit
 
 
-class TwoPointersSolution:
+class SlidingWindowSolution:
     def maxProfit(self, prices: list[int]) -> int:
         # Maintain two pointers, where `left` tracks the best possible buy time
         # and `right` tracks the possible sell time. It is important to note
