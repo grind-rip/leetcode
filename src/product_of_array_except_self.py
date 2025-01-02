@@ -44,29 +44,36 @@ Scratch:
      <-------- 30 ---> 3 prev / i * i-1
      <---------- 24 -> 4 prev / i * i-1
 
-  I was *close* on this one in that I reasoned correctly that the original
-  array needed to be segmented into left and right parts, but failed to realize
-  that I could not use the division operation ('/').
+I was *close* on this one in that I reasoned correctly that the original array
+needed to be segmented into left and right parts, but failed to realize that I
+could not use the division operation.
 
-  The correct solution involves initializing two empty arrays, L and R where
-  for a given index i, L[i] would contain the product of all the numbers to the
-  left of i and R[i] would contain the product of all the numbers to the right
-  of i. Using L and R, the product of index i can be easily calculated as:
+The correct solution involves initializing two empty arrays, L and R where for
+a given index i, L[i] contains the product of all the numbers to the left of i
+and R[i] contains the product of all the numbers to the right of i. Using L and
+R, the product of index i can be easily calculated as:
 
-    L[i] * R[i]
+  L[i] * R[i]
+
+This technique is called *precomputation*. The precomputation technique
+involves processing the array once (or a constant number of times) at the
+beginning to create auxiliary data structures (like prefix sums, suffix arrays,
+or frequency maps) that can help optimize subsequent operations or queries.
+
+This approach still has O(n) time complexity, since O(3*n) is still linear (
+one iteration to construct L, one iteration to construct the R, and one
+iteration to construct the answer using L and R).
 """
-
-from typing import List
 
 
 class Solution:
-    def productExceptSelf(self, nums: List[int]) -> List[int]:
+    def productExceptSelf(self, nums: list[int]) -> list[int]:
         length = len(nums)
         L, R, res = [0] * length, [0] * length, [0] * length
 
         # L[i] is the product of all the elements to the left of i.
         #
-        #   L[i] = L[i−1] ∗ nums[i−1]
+        #   L[i] = L[i−1] * nums[i−1]
         #
         # NOTE: For i = 0, there are no elements to the left of i, therefore
         # L[0] = 1.
@@ -76,10 +83,10 @@ class Solution:
 
         # R[i] is the product of all the elements to the right of i.
         #
-        #   R[i] = R[i+1] ∗ nums[i+1]
+        #   R[i] = R[i+1] * nums[i+1]
         #
         # NOTE: For i = length-1, there are no elements to the right of i,
-        # therefore R[length -1] = 1.
+        # therefore R[length - 1] = 1.
         R[length - 1] = 1
         for i in reversed(range(length - 1)):
             R[i] = R[i + 1] * nums[i + 1]
@@ -87,4 +94,40 @@ class Solution:
         # Construct answer array.
         for i in range(length):
             res[i] = L[i] * R[i]
+        return res
+
+
+class ConstantSpaceSolution:
+    """
+    Instead of constructing an L and R array, the answer array is constructed
+    on the fly, since we only ever care about the previously calculated product
+    to the left or right of i. This solution is a little less intuitive than
+    constructing the L and R array and is only ever needed if you are asked to
+    generate the answer array in O(1) extra space complexity.
+    """
+    def productExceptSelf(self, nums: list[int]) -> list[int]:
+        length = len(nums)
+        res = [1] * length
+
+        # Start with L = 1, since there are no elements to the left of nums[0].
+        # The product of elements to the left of res[i] is the product of
+        # L, the previous product of the array of elements to the left of i,
+        # and the leftmost element (nums[i - 1]). This can also be simplified
+        # to res[i] = res[i - 1] * nums[i - 1].
+        L = 1
+        for i in range(1, length):
+            res[i] = L * nums[i - 1]
+            L *= nums[i - 1]
+
+        # Start with R = 1, since there are no elements to the right of
+        # res[length - 1]. The product of elements to the right of res[i] is
+        # the product of R, the previous product of the array of elements to
+        # the right of i, and the current element in the answer array (res[i]).
+        # It should be noted that the ith element of the answer array is used
+        # here, not the ith element of the input array (nums).
+        R = 1
+        for i in reversed(range(length)):
+            res[i] = R * res[i]
+            R *= nums[i]
+
         return res
