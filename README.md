@@ -25,3 +25,5 @@ A collection of LeetCode solutions
 [Valid Anagram](./src/valid_anagram.py)
 
 [Valid Palindrome](./src/valid_palindrome.py)
+
+[Valid Parentheses](./src/valid_parentheses.py)
