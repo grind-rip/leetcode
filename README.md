@@ -23,3 +23,5 @@ A collection of LeetCode solutions
 [Two Sum](./src/two_sum.py)
 
 [Valid Anagram](./src/valid_anagram.py)
+
+[Valid Palindrome](./src/valid_palindrome.py)
