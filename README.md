@@ -21,3 +21,5 @@ A collection of LeetCode solutions
 [String Compression](./src/string_compression.py)
 
 [Two Sum](./src/two_sum.py)
+
+[Valid Anagram](./src/valid_anagram.py)
