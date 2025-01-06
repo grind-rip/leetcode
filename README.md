@@ -16,6 +16,8 @@ A collection of LeetCode solutions
 
 [House Robber](./src/house_robber.py)
 
-[Two Sum](./src/two_sum.py)
-
 [Product of Array Except Self](./src/product_of_array_except_self.py)
+
+[String Compression](./src/string_compression.py)
+
+[Two Sum](./src/two_sum.py)
