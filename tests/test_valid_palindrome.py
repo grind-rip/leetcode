@@ -6,7 +6,7 @@ https://leetcode.com/problems/valid-palindrome
 
 from unittest import TestCase
 
-from src.valid_palindrome import Solution, SimplifiedSolution
+from src.valid_palindrome import SimplifiedSolution, Solution
 
 
 class TestSolution(TestCase):
