@@ -18,6 +18,8 @@ A collection of LeetCode solutions
 
 [House Robber](./src/house_robber.py)
 
+[Invert Binary Tree](./src/invert_binary_tree.py)
+
 [Maximum Depth of Binary Tree](./src/maximum_depth_of_binary_tree.py)
 
 [Maximum Subarray](./src/maximum_subarray.py)
