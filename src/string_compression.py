@@ -116,7 +116,7 @@ class Solution:
                 chars[wp] = chars[cc]
                 wp += 1
                 if count > 1:
-                    for x, c in enumerate(str(count)):
+                    for c in str(count):
                         chars[wp] = c
                         wp += 1
                 # Reset count to 1. Move current character pointer to i (the
@@ -128,7 +128,7 @@ class Solution:
         chars[wp] = chars[cc]
         wp += 1
         if count > 1:
-            for i, c in enumerate(str(count)):
+            for c in str(count):
                 chars[wp] = c
                 wp += 1
 
@@ -159,6 +159,7 @@ class SimplifiedSolution:
     The algorithm still maintains O(n) time complexity and O(1) space
     complexity, but is more concise.
     """
+
     def compress(self, chars: list[str]) -> int:
         # Initialize a write pointer (wp) and count (number of repeating
         # characters). count is initialized to 1, since logically, we cannot

@@ -24,6 +24,7 @@ class Solution:
     be robbed by calculating if the (i-2)th house and ith house would yield
     more money than the (i-1)th house (i.e., not robbing the ith house).
     """
+
     def rob(self, nums: list[int]) -> int:
         dp: list[int] = [0] * len(nums)
 
@@ -59,6 +60,7 @@ class MemoizationSolution:
       5. The value is calculated, stored, and returned using the recursive
          function.
     """
+
     def rob(self, nums: list[int]) -> int:
         memo: list[int] = [-1] * len(nums)
 

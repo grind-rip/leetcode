@@ -80,7 +80,7 @@ class Solution:
                 if d[c] == 0:
                     del d[c]
 
-        return False if d else True
+        return not d
 
 
 class SimplifiedSolution:
@@ -89,5 +89,6 @@ class SimplifiedSolution:
       * Uses a Counter instead of a dict. The Counter class is a specialized
         dictionary subclass for counting hashable objects.
     """
+
     def isAnagram(self, s: str, t: str) -> bool:
         return Counter(s) == Counter(t)

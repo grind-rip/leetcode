@@ -45,6 +45,7 @@ class TabularizationSolution:
     calculated sum when determining the solution to the subproblem, we do not
     need any previous values.
     """
+
     def maxSubArray(self, nums: list[int]) -> int:
         # Initialize dp array. The first element is nums[0], since the maximum
         # subarray of an array with length 1 is the array itself.

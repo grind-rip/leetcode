@@ -105,6 +105,7 @@ class ConstantSpaceSolution:
     constructing the L and R array and is only ever needed if you are asked to
     generate the answer array in O(1) extra space complexity.
     """
+
     def productExceptSelf(self, nums: list[int]) -> list[int]:
         length = len(nums)
         res = [1] * length

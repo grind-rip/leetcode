@@ -38,21 +38,29 @@ class Solution:
 
         Offset (A -> a) = 32
         """
+        ASCII_0 = 48
+        ASCII_9 = 57
+        ASCII_A = 65
+        ASCII_Z = 90
+        ASCII_a = 97
+        ASCII_z = 122
+        OFFSET = 32
+
         if len(s) == 0:
             return True
 
         p0, p1 = 0, len(s) - 1
         while p0 < p1:
             c0, c1 = ord(s[p0]), ord(s[p1])
-            if (48 <= c0 <= 57) or (65 <= c0 <= 90) or (97 <= c0 <= 122):
-                if 65 <= c0 <= 90:
-                    c0 = c0 + 32
+            if (ASCII_0 <= c0 <= ASCII_9) or (ASCII_A <= c0 <= ASCII_Z) or (ASCII_a <= c0 <= ASCII_z):
+                if ASCII_A <= c0 <= ASCII_Z:
+                    c0 = c0 + OFFSET
             else:
                 p0 = p0 + 1
                 continue
-            if (48 <= c1 <= 57) or (65 <= c1 <= 90) or (97 <= c1 <= 122):
-                if 65 <= c1 <= 90:
-                    c1 = c1 + 32
+            if (ASCII_0 <= c1 <= ASCII_9) or (ASCII_A <= c1 <= ASCII_Z) or (ASCII_a <= c1 <= ASCII_z):
+                if ASCII_A <= c1 <= ASCII_Z:
+                    c1 = c1 + OFFSET
             else:
                 p1 = p1 - 1
                 continue
