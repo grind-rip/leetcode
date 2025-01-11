@@ -1,7 +1,7 @@
 """
 242. Valid Anagram
 
-https://leetcode.com/problems/valid-anagram/description/
+https://leetcode.com/problems/valid-anagram
 """
 
 from unittest import TestCase
