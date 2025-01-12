@@ -37,3 +37,5 @@ A collection of LeetCode solutions
 [Valid Palindrome](./src/valid_palindrome.py)
 
 [Valid Parentheses](./src/valid_parentheses.py)
+
+[Validate Binary Search Tree](./src/validate_binary_search_tree.py)
