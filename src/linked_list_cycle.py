@@ -9,6 +9,8 @@ NOTES
     linked list. This algorithm can also be used for directed graphs.
 
     See: https://en.wikipedia.org/wiki/Cycle_detection
+
+This solution has O(n) runtime complexity and O(1) space complexity.
 """
 
 from src.classes import ListNode
@@ -26,7 +28,7 @@ class Solution:
             return False
 
         # The algorithm maintains two pointers into the given sequence, one
-        # (the tortoise) at xi, and the other (the hare) at x2i. At each step
+        # (the tortoise) at xᵢ, and the other (the hare) at x₂ᵢ. At each step
         # of the algorithm, it increases i by one, moving the tortoise one step
         # forward and the hare two steps forward in the sequence, and then
         # compares the sequence values at these two pointers. The smallest
