@@ -28,10 +28,7 @@ class TestSolution(TestCase):
 
     def test_4(self):
         exp = 4
-        assert (
-            Solution().longestCommonSubsequence("pmjghexybyrgzczy", "hafcdqbgncrcbihkd")
-            == exp
-        )
+        assert Solution().longestCommonSubsequence("pmjghexybyrgzczy", "hafcdqbgncrcbihkd") == exp
 
 
 class TestMemoizationSolution(TestCase):
@@ -49,12 +46,7 @@ class TestMemoizationSolution(TestCase):
 
     def test_4(self):
         exp = 4
-        assert (
-            MemoizationSolution().longestCommonSubsequence(
-                "pmjghexybyrgzczy", "hafcdqbgncrcbihkd"
-            )
-            == exp
-        )
+        assert MemoizationSolution().longestCommonSubsequence("pmjghexybyrgzczy", "hafcdqbgncrcbihkd") == exp
 
 
 class TestRecursiveSolution(TestCase):
@@ -72,9 +64,4 @@ class TestRecursiveSolution(TestCase):
 
     def test_4(self):
         exp = 4
-        assert (
-            MemoizationSolution().longestCommonSubsequence(
-                "pmjghexybyrgzczy", "hafcdqbgncrcbihkd"
-            )
-            == exp
-        )
+        assert MemoizationSolution().longestCommonSubsequence("pmjghexybyrgzczy", "hafcdqbgncrcbihkd") == exp

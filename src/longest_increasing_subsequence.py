@@ -68,12 +68,11 @@ return to...
 """
 
 import sys
-from typing import List
 
 
 class Solution:
-    def lengthOfLIS(self, nums: List[int]) -> int:
-        dp: List[int] = [1] * len(nums)
+    def lengthOfLIS(self, nums: list[int]) -> int:
+        dp: list[int] = [1] * len(nums)
 
         for i in range(1, len(nums)):
             for j in range(i):
@@ -93,13 +92,13 @@ class MemoizationSolution:
       [3, 5, 6, 2, 5, 4, 19, 5, 6, 7, 12] -> 5 == 3
     """
 
-    def lengthOfLIS(self, nums: List[int]) -> int:
+    def lengthOfLIS(self, nums: list[int]) -> int:
         # Initialize the memoization table. Each index in the table is the
         # calculated longest increasing subsequence up to and including the
         # current index.
-        memo: List[int] = [1] * len(nums)
+        memo: list[int] = [1] * len(nums)
 
-        def lis(nums: List[int], m: int, memo) -> int:
+        def lis(nums: list[int], m: int, memo) -> int:
             if len(nums) == 1:
                 return 1 if nums[0] > m else 0
             # Calculate the result of each decision:
@@ -128,8 +127,8 @@ class RecursiveSolution:
       [3, 5, 6, 2, 5, 4, 19, 5, 6, 7, 12] -> 6 == 3
     """
 
-    def lengthOfLIS(self, nums: List[int]) -> int:
-        def lis(nums: List[int], m: int) -> int:
+    def lengthOfLIS(self, nums: list[int]) -> int:
+        def lis(nums: list[int], m: int) -> int:
             if len(nums) == 1:
                 return 1 if nums[0] > m else 0
 

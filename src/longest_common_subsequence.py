@@ -45,8 +45,6 @@ NOTES
         "tabulation" and "dynamic programming" interchangeably.
 """
 
-from typing import List
-
 
 class Solution:
     """
@@ -86,7 +84,7 @@ class Solution:
         #
         # where a,a is (0,0) and e,e is (5,3) (for i,j).
         col, row = len(text1) + 1, len(text2) + 1
-        dp: List[List[int]] = [[0 for _ in range(col)] for _ in range(row)]
+        dp: list[list[int]] = [[0 for _ in range(col)] for _ in range(row)]
 
         # Iterate over the table in reverse (first by column, then by row).
         for i in reversed(range(len(text2))):
@@ -122,9 +120,9 @@ class MemoizationSolution:
         #
         # where a,a is (0,0) and e,e is (5,3) (for i,j).
         col, row = len(text1), len(text2)
-        memo: List[List[int]] = [[-1 for _ in range(col)] for _ in range(row)]
+        memo: list[list[int]] = [[-1 for _ in range(col)] for _ in range(row)]
 
-        def lcs(s1: str, s2: str, memo: List[List[int]]) -> int:
+        def lcs(s1: str, s2: str, memo: list[list[int]]) -> int:
             col, row = len(memo[0]), len(memo)
             if s1 == "" or s2 == "":
                 return 0

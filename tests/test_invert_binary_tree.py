@@ -7,7 +7,7 @@ https://leetcode.com/problems/invert-binary-tree
 from unittest import TestCase
 
 from src.invert_binary_tree import Solution
-from tests.utils import create_binary_tree, bfs
+from tests.utils import bfs, create_binary_tree
 
 
 class TestSolution(TestCase):

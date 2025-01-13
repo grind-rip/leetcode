@@ -11,9 +11,7 @@ NOTES
     See: https://en.wikipedia.org/wiki/Cycle_detection
 """
 
-from typing import Optional
-
-from .classes import ListNode
+from src.classes import ListNode
 
 
 class Solution:
@@ -23,7 +21,7 @@ class Solution:
     equal values.
     """
 
-    def hasCycle(self, head: Optional[ListNode]) -> bool:
+    def hasCycle(self, head: ListNode | None) -> bool:
         if not head or not head.next:
             return False
 
