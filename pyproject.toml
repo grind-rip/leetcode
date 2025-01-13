@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "leetcode"
+version = "0.0.1"
+description = "A collection of LeetCode solutions"
+readme = "README.md"
+requires-python = ">=3.13"
+
+dependencies = []
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.hatch.envs.default]
+dependencies = [
+  "pytest",
+  "ruff"
+]
+
+[tool.ruff.lint]
+# A002: Argument is shadowing a Python builtin
+# E741: do not use variables named 'l', 'O', or 'I'
+# N802: Function name should be lowercase
+# N803 Argument name should be lowercase
+# N806: Variable in function should be lowercase
+# N999: Invalid module name
+# RET505: Unnecessary `elif` after `return` statement
+# RUF002: Docstring contains ambiguous `ν`
+# RUF003: Docstring contains ambiguous `ν`
+# T201: `print` found
+# W605: invalid escape sequence '\ '
+ignore = ["A002", "E741", "N802", "N803", "N806", "N999", "RET505", "RUF002", "RUF003", "T201", "W605"]
