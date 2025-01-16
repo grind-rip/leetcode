@@ -22,6 +22,8 @@ A collection of LeetCode solutions
 
 [Linked List Cycle](./src/linked_list_cycle.py)
 
+[Longest Common Subsequence](./src/longest_common_subsequence.py)
+
 [Maximum Depth of Binary Tree](./src/maximum_depth_of_binary_tree.py)
 
 [Maximum Subarray](./src/maximum_subarray.py)

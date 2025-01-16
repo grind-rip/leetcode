@@ -6,11 +6,7 @@ https://leetcode.com/problems/longest-common-subsequence
 
 from unittest import TestCase
 
-from src.longest_common_subsequence import (
-    MemoizationSolution,
-    RecursiveSolution,
-    Solution,
-)
+from src.longest_common_subsequence import AlternativeSolution, MemoizationSolution, RecursiveSolution, Solution
 
 
 class TestSolution(TestCase):
@@ -29,6 +25,24 @@ class TestSolution(TestCase):
     def test_4(self):
         exp = 4
         assert Solution().longestCommonSubsequence("pmjghexybyrgzczy", "hafcdqbgncrcbihkd") == exp
+
+
+class TestAlternativeSolution(TestCase):
+    def test_1(self):
+        exp = 3
+        assert AlternativeSolution().longestCommonSubsequence("abcde", "ace") == exp
+
+    def test_2(self):
+        exp = 3
+        assert AlternativeSolution().longestCommonSubsequence("abc", "abc") == exp
+
+    def test_3(self):
+        exp = 0
+        assert AlternativeSolution().longestCommonSubsequence("abc", "def") == exp
+
+    def test_4(self):
+        exp = 4
+        assert AlternativeSolution().longestCommonSubsequence("pmjghexybyrgzczy", "hafcdqbgncrcbihkd") == exp
 
 
 class TestMemoizationSolution(TestCase):
