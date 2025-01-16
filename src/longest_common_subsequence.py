@@ -236,6 +236,7 @@ class RecursiveSolution:
         Given two strings, `text1` and `text2`, compute the length of their
         Longest Common Subsequence (LCS) using pure recursion.
         """
+
         def lcs(s1: str, s2: str) -> int:
             if not s1 or not s2:
                 return 0
