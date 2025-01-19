@@ -30,6 +30,7 @@ dependencies = [
 # RET505: Unnecessary `elif` after `return` statement
 # RUF002: Docstring contains ambiguous `ν`
 # RUF003: Docstring contains ambiguous `ν`
+# SIM108 Use ternary operator
 # T201: `print` found
 # W605: invalid escape sequence '\ '
-ignore = ["A002", "E741", "N802", "N803", "N806", "N999", "RET505", "RUF002", "RUF003", "T201", "W605"]
+ignore = ["A002", "E741", "N802", "N803", "N806", "N999", "RET505", "RUF002", "RUF003", "SIM108", "T201", "W605"]

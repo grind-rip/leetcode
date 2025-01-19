@@ -24,6 +24,8 @@ A collection of LeetCode solutions
 
 [Longest Common Subsequence](./src/longest_common_subsequence.py)
 
+[Longest Increasing Subsequence](./src/longest_increasing_subsequence.py)
+
 [Maximum Depth of Binary Tree](./src/maximum_depth_of_binary_tree.py)
 
 [Maximum Subarray](./src/maximum_subarray.py)
