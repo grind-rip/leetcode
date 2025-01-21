@@ -8,3 +8,4 @@
 - [ ] Add alternative solution for 'Longest Increasing Subsequence'
 - [ ] Add binary search solution for 'Longest Increasing Subsequence'
 - [ ] Ensure all lines are &lt; 80 characters.
+- [ ] Add recursive solution to 'Reverse Linked List'
