@@ -10,7 +10,7 @@ NOTES
 
     See: https://en.wikipedia.org/wiki/Cycle_detection
 
-This solution has O(n) runtime complexity and O(1) space complexity.
+This solution has O(n) time complexity and O(1) space complexity.
 """
 
 from src.classes import ListNode

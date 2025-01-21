@@ -11,8 +11,8 @@ subproblems (bottom-up approach) or with recursion and memoization (top-down
 approach).
 
 Both the dynamic programming (bottom-up) and memoization (top-down) solutions
-have O(S * n) runtime complexity where 'S' is the amount and 'n' is the number
-of coins.
+have O(S * n) time complexity where 'S' is the amount and 'n' is the number of
+coins.
 
 This problem should not be confused with the coin change problem where you need
 to find the number of different ways to make up an amount using the given coins

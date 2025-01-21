@@ -43,8 +43,8 @@ Getting adjacent and diagonal coordinates (with boundary check)
         if (0 <= i < m and 0 <= j < n):
             ...
 
-This solution has O(n) runtime complexity and O(n) space complexity, since, in
-the worst case, we will need to visit every pixel in the image.
+This solution has O(n) time complexity and O(n) space complexity, since, in the
+worst case, we will need to visit every pixel in the image.
 """
 
 from collections import deque

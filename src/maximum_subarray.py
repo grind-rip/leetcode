@@ -4,7 +4,7 @@
 https://leetcode.com/problems/maximum-subarray
 
 NOTES
-  * This problem can be solved in O(n) runtime complexity and O(1) space
+  * This problem can be solved in O(n) time complexity and O(1) space
     complexity using Kadane's algorithm.
 
 The key insight is that at each position (i), you only need to decide whether

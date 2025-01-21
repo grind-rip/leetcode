@@ -4,12 +4,17 @@
 https://leetcode.com/problems/reverse-linked-list
 
 NOTES
-  * Reversing a linked list is similar to merging two sorted linked lists, in
-    that a pointer ('prev') keeps a reference to the previous node. However, we
-    also need an additional pointer ('next') to keep a reference to the next
-    node in the sequence.
+  * Reversing a linked list in-place iteratively involves some simple pointer
+    management. Three variables - prev, curr, and next - are used to store the
+    previous, current, and next nodes, respectively. For each iteration, the
+    next node (curr.next) is stored. Since we are "unlinking" the current node
+    from the next node and "relinking" it to the previous node, we need to keep
+    a reference to this node. Next, we point the current node at the previous
+    node (prev). We then update the reference to the previous node to be the
+    current node and the current node to be the next node. We repeat the
+    process until the end of the list is reached.
 
-    Example:
+    Example (where ○ represents null):
 
       1   2   3   4   5
       ● → ● → ● → ● → ● → ○
@@ -19,14 +24,14 @@ NOTES
 
         next = curr.next
 
-      Next, we update its reference to next to be the previous node (null):
+      Next, we update its reference to next to be the previous node (○):
 
         curr.next = prev
 
           1   2   3   4   5
       ○ ← ●   ● → ● → ● → ● → ○
 
-      Then, we update the previous node (null) to be the current node (1):
+      Then, we update the previous node (○) to be the current node (1):
 
         prev = curr
 
