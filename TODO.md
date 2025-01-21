@@ -7,3 +7,4 @@
 - [ ] Review other approaches to solving 'Subtree of Another Tree'
 - [ ] Add alternative solution for 'Longest Increasing Subsequence'
 - [ ] Add binary search solution for 'Longest Increasing Subsequence'
+- [ ] Ensure all lines are &lt; 80 characters.
