@@ -9,3 +9,4 @@
 - [ ] Add binary search solution for 'Longest Increasing Subsequence'
 - [ ] Ensure all lines are &lt; 80 characters.
 - [ ] Add recursive solution to 'Reverse Linked List'
+- [ ] Add recursive solution to 'Merge Two Sorted Lists'

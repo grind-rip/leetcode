@@ -30,6 +30,8 @@ A collection of LeetCode solutions
 
 [Maximum Subarray](./src/maximum_subarray.py)
 
+[Merge Two Sorted Lists](./src/merge_two_sorted_lists.py)
+
 [Product of Array Except Self](./src/product_of_array_except_self.py)
 
 [Reverse Linked List](./src/reverse_linked_list.py)
