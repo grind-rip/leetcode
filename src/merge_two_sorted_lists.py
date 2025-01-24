@@ -74,5 +74,5 @@ class Solution:
             curr = curr.next
         # At this point, list1 or list2 may still have nodes. The non-null list
         # is attached to the end of the merged list at 'curr'.
-        curr.next = list1 if list1 is not None else list2
+        curr.next = list1 if list1 else list2
         return prehead.next

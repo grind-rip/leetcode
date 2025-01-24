@@ -28,7 +28,7 @@ NOTES
               slow
                       fast
 
-    When the list contains an even number of nodes, there are two middle nodes.
+    If the list contains an even number of nodes, there are two middle nodes.
     To take the second middle node, use slow.next:
 
       1   2   3   4   5   6

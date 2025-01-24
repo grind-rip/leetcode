@@ -69,4 +69,6 @@ class Solution:
             curr.next = prev
             prev = curr
             curr = _next
+            # A more elegant way using tuple unpacking:
+            #   curr.next, prev, curr = prev, curr, curr.next
         return prev

@@ -38,6 +38,8 @@ A collection of LeetCode solutions
 
 [Remove Nth Node From End of List](./src/remove_nth_node_from_end_of_list.py)
 
+[Reorder List](./src/reorder_list.py)
+
 [Reverse Linked List](./src/reverse_linked_list.py)
 
 [Same Tree](./src/same_tree.py)
