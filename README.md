@@ -30,6 +30,8 @@ A collection of LeetCode solutions
 
 [Maximum Subarray](./src/maximum_subarray.py)
 
+[Merge k Sorted Lists](./src/merge_k_sorted_lists.py)
+
 [Merge Two Sorted Lists](./src/merge_two_sorted_lists.py)
 
 [Middle of the Linked List](./src/middle_of_the_linked_list.py)
