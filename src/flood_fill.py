@@ -3,13 +3,8 @@
 
 https://leetcode.com/problems/flood-fill
 
-Example:
-
-   j →
-  i
-  ↓  1 1 1     2 2 2
-     1 1 0  →  2 2 0
-     1 0 1     2 0 1
+NOTES
+  * Use breadth-first search.
 
 This problem is very straight-forward if you use breadth-first search. Simply
 add adjacent pixels that share the same color as the starting pixel to the
@@ -45,6 +40,14 @@ Getting adjacent and diagonal coordinates (with boundary check)
 
 This solution has O(n) time complexity and O(n) space complexity, since, in the
 worst case, we will need to visit every pixel in the image.
+
+Example:
+
+   j →
+  i
+  ↓  1 1 1     2 2 2
+     1 1 0  →  2 2 0
+     1 0 1     2 0 1
 """
 
 from collections import deque
