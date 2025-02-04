@@ -14,6 +14,8 @@ A collection of LeetCode solutions
 
 [Contains Duplicate](./src/contains_duplicate.py)
 
+[Find Median from Data Stream](./src/find_median_from_data_stream.py)
+
 [Flood Fill](./src/flood_fill.py)
 
 [House Robber](./src/house_robber.py)
