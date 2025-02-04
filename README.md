@@ -20,6 +20,8 @@ A collection of LeetCode solutions
 
 [Invert Binary Tree](./src/invert_binary_tree.py)
 
+[K Closest Points to Origin](./src/k_closest_points_to_origin.py)
+
 [Linked List Cycle](./src/linked_list_cycle.py)
 
 [Longest Common Subsequence](./src/longest_common_subsequence.py)
