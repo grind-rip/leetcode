@@ -19,16 +19,15 @@ class Solution:
     origin. Since the `heapq` module only provides an implementation for a min-
     heap, the distance is negated before being inserted into the heap.
     """
-    def kClosest(self, points: list[list[int]], k: int) -> list[list[int]]:
 
+    def kClosest(self, points: list[list[int]], k: int) -> list[list[int]]:
         heap: list[tuple[float, list[int]]] = []  # (distance, [xi,yi])
 
         for i, p in enumerate(points):
-            d = math.sqrt(p[0]**2 + p[1]**2)
+            d = math.sqrt(p[0] ** 2 + p[1] ** 2)
             if i < k:
                 heapq.heappush(heap, (-d, p))
-            else:
-                if -d > heap[0][0]:
-                    heapq.heapreplace(heap, (-d, p))
+            elif -d > heap[0][0]:
+                heapq.heapreplace(heap, (-d, p))
 
         return [p[1] for p in heap]
