@@ -2,17 +2,27 @@
 Class definitions provided by LeetCode.
 """
 
+from typing import Generic, Self, TypeVar
 
-# Definition for singly-linked list.
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+T = TypeVar("T")
 
 
-# Definition for a binary tree node.
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
+class ListNode(Generic[T]):
+    """
+    A list node in a singly-linked list.
+    """
+
+    def __init__(self, val: T, next: Self | None = None) -> None:
+        self.val: T = val
+        self.next: ListNode | None = next
+
+
+class TreeNode(Generic[T]):
+    """
+    A tree node in a binary tree.
+    """
+
+    def __init__(self, val: T, left: Self | None = None, right: Self | None = None) -> None:
+        self.val: T = val
+        self.left: TreeNode[T] | None = right
+        self.right: TreeNode[T] | None = left
