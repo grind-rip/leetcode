@@ -32,6 +32,10 @@ A collection of LeetCode solutions
 
 [Longest Increasing Subsequence](./src/longest_increasing_subsequence.py)
 
+[Lowest Common Ancestor of a Binary Search Tree](./src/lowest_common_ancestor_of_a_binary_search_tree.py)
+
+[Lowest Common Ancestor of a Binary Tree](./src/lowest_common_ancestor_of_a_binary_tree.py)
+
 [Maximum Depth of Binary Tree](./src/maximum_depth_of_binary_tree.py)
 
 [Maximum Subarray](./src/maximum_subarray.py)
