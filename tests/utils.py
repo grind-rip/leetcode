@@ -4,7 +4,7 @@ Utility functions for testing.
 
 from collections import deque
 
-from src.classes import ListNode, TreeNode
+from src.classes import ListNode, T, TreeNode
 
 
 def create_linked_list_from_list(l: list[int]) -> ListNode | None:
@@ -101,10 +101,11 @@ def _create_binary_tree_from_list(l: list[int | None], i: int) -> TreeNode | Non
     return node
 
 
-def create_bfs_list_from_binary_tree(root: TreeNode | None) -> list[int]:
+def create_bfs_list_from_binary_tree(*, root: TreeNode | None, values_only: bool = True) -> list[TreeNode | T]:
     """
-    Creates a list of integers in breadth-first search order given the root
-    node of a binary tree.
+    Creates a list of nodes in breadth-first search order given the root node
+    of a binary tree. If values_only is False, the list contains the TreeNode
+    objects themselves.
 
     Breadth-first order always attempts to visit the node closest to the root
     that it has not already visited. This is also called a level-order
@@ -113,12 +114,15 @@ def create_bfs_list_from_binary_tree(root: TreeNode | None) -> list[int]:
     if not root:
         return []
 
-    l: list[int] = []
+    l: list[TreeNode | T] = []
     q: deque[TreeNode] = deque([root])
 
     while q:
         curr: TreeNode = q.popleft()
-        l.append(curr.val)
+        if values_only:
+            l.append(curr.val)
+        else:
+            l.append(curr)
         if curr.left:
             q.append(curr.left)
         if curr.right:
