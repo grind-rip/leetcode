@@ -16,6 +16,8 @@ A collection of LeetCode solutions
 
 [Coin Change](./src/coin_change.py)
 
+[Construct Binary Tree from Preorder and Inorder Traversal](./src/construct_binary_tree_from_preorder_and_inorder_traversal.py)
+
 [Contains Duplicate](./src/contains_duplicate.py)
 
 [Find Median from Data Stream](./src/find_median_from_data_stream.py)
