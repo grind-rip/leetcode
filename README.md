@@ -10,6 +10,8 @@ A collection of LeetCode solutions
 
 [Binary Tree Level Order Traversal](./src/binary_tree_level_order_traversal.py)
 
+[Binary Tree Right Side View](./src/binary_tree_right_side_view.py)
+
 [Climbing Stairs](./src/climbing_stairs.py)
 
 [Coin Change](./src/coin_change.py)
