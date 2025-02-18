@@ -65,6 +65,7 @@ NOTES
 """
 
 import heapq
+from typing import Self
 
 from src.classes import ListNode
 
@@ -79,7 +80,7 @@ class HeapNode:
     def __init__(self, node: ListNode):
         self.node: ListNode = node
 
-    def __lt__(self, other: "HeapNode") -> bool:
+    def __lt__(self, other: Self) -> bool:
         return self.node.val < other.node.val
 
 

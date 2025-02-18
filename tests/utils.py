@@ -131,13 +131,17 @@ def create_bfs_list_from_binary_tree(*, root: TreeNode | None, values_only: bool
     return l
 
 
-def is_valid_tree(root: TreeNode | None, i: int, exp: list[T | None]) -> None:
+def assert_tree(root: TreeNode | None, exp: list[T | None]) -> None:
     """
-    Given a list of values in pre-order traversal, assert that the tree is
-    valid. Gaps in the tree are denoted by None.
+    Given a list of values in level-order traversal, assert that the tree
+    matches the expected values. Gaps in the tree should be denoted by None.
     """
-    if not root:
-        return None
-    assert root.val == exp[i]
-    is_valid_tree(root.left, 2 * i + 1, exp)
-    is_valid_tree(root.right, 2 * i + 2, exp)
+
+    def _assert_tree(root: TreeNode | None, i: int, exp: list[T | None]) -> None:
+        if not root:
+            return None
+        assert root.val == exp[i]
+        _assert_tree(root.left, 2 * i + 1, exp)
+        _assert_tree(root.right, 2 * i + 2, exp)
+
+    _assert_tree(root, 0, exp)
