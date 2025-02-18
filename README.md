@@ -30,6 +30,8 @@ A collection of LeetCode solutions
 
 [K Closest Points to Origin](./src/k_closest_points_to_origin.py)
 
+[Kth Smallest Element in a BST](./src/kth_smallest_element_in_a_bst.py)
+
 [Linked List Cycle](./src/linked_list_cycle.py)
 
 [Longest Common Subsequence](./src/longest_common_subsequence.py)
