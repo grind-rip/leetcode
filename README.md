@@ -12,6 +12,8 @@ A collection of LeetCode solutions
 
 [Binary Tree Right Side View](./src/binary_tree_right_side_view.py)
 
+[Binary Tree Maximum Path Sum](./src/binary_tree_maximum_path_sum.py)
+
 [Climbing Stairs](./src/climbing_stairs.py)
 
 [Coin Change](./src/coin_change.py)
