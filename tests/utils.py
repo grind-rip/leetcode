@@ -72,6 +72,36 @@ def create_binary_tree_from_list(l: list[int | None]) -> TreeNode | None:
     tree in breadth-first search order.
 
     NOTE: Gaps in the binary tree should be denoted by `None`.
+
+    NOTE: This function requires that the list represent a complete binary
+    tree:
+      1. All levels must be completely filled from left to right, except
+         possibly the last level.
+      2. The last level must have nodes filled from left to right without gaps.
+
+    This means that gaps must be denoted by `None`, except for gaps to the
+    right of the last node in the last level.
+
+    For example, given the following tree:
+
+          1
+          ●
+        /   \
+      2       3
+      ●       ●
+            /   \
+           4     5
+           ●     ●
+         /   \
+        6     7
+        ●     ●
+
+    The list representation would be:
+
+      [1, 2, 3, None, None, 4, 5, None, None, None, None, 6, 7]
+
+    For functions that do not require that the list represent a complete binary
+    tree, see `serialize_binary_tree()` and `deserialize_binary_tree()`.
     """
     if not l:
         return None
@@ -129,6 +159,93 @@ def create_bfs_list_from_binary_tree(*, root: TreeNode | None, values_only: bool
             q.append(curr.right)
 
     return l
+
+
+def create_bfs_list_from_binary_tree_with_gaps(
+    *, root: TreeNode | None, values_only: bool = True
+) -> list[TreeNode | T | None]:
+    """
+    Same as `create_bfs_list_from_binary_tree()`, but accounts for gaps. Gaps
+    in the tree should be denoted by `None`.
+    """
+    if not root:
+        return []
+
+    l: list[TreeNode | T | None] = []
+    q: deque[TreeNode | None] = deque([root])
+
+    while q:
+        curr: TreeNode | None = q.popleft()
+        if curr and values_only:
+            l.append(curr.val)
+        elif curr:
+            l.append(curr)
+        else:
+            l.append(None)
+        if curr:
+            q.append(curr.left)
+            q.append(curr.right)
+
+    # Remove trailing 'None' values.
+    while not l[-1]:
+        l.pop()
+
+    return l
+
+
+def serialize_binary_tree(root: TreeNode[T] | None) -> list[T | None]:
+    """
+    Serializes a binary tree similar to LeetCode.
+    """
+    l: list[T | None] = []
+
+    if not root:
+        return l
+
+    q: deque[TreeNode[T] | None] = deque([root])
+
+    while q:
+        curr: TreeNode[T] | None = q.popleft()
+        if curr:
+            l.append(curr.val)
+        else:
+            l.append(None)
+        if curr:
+            q.append(curr.left)
+            q.append(curr.right)
+
+    # Remove trailing 'None' values.
+    while not l[-1]:
+        l.pop()
+
+    return l
+
+
+def deserialize_binary_tree(l: list[T | None]) -> TreeNode[T] | None:
+    """
+    Deserializes a binary tree similar to LeetCode.
+    """
+    if not l or not l[0]:
+        return None
+
+    root = TreeNode(val=l[0])
+    q: deque[TreeNode] = deque([root])
+    i = 1
+
+    while q and i < len(l):
+        curr: TreeNode = q.popleft()
+        if l[i] is not None:
+            left = TreeNode(val=l[i])
+            curr.left = left
+            q.append(left)
+        i += 1
+        if l[i] is not None:
+            right = TreeNode(val=l[i])
+            curr.right = right
+            q.append(right)
+        i += 1
+
+    return root
 
 
 def assert_tree(root: TreeNode | None, exp: list[T | None]) -> None:
