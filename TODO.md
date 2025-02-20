@@ -14,3 +14,5 @@
 - [ ] Add self-balancing BST approach to 'Find Median from Data Stream'
 - [ ] Add iterative without parent pointers approach to 'Lowest Common Ancestor of a Binary Tree'
 - [ ] Add recursive approach to 'Binary Tree Right Side View'
+- [ ] Move `utils.py` to `src/`
+- [ ] Use `serialize_binary_tree()` and `deserialize_binary_tree()`

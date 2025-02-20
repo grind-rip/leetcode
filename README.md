@@ -64,6 +64,8 @@ A collection of LeetCode solutions
 
 [Same Tree](./src/same_tree.py)
 
+[Serialize and Deserialize Binary Tree](./src/serialize_and_deserialize_binary_tree.py)
+
 [String Compression](./src/string_compression.py)
 
 [Subtree of Another Tree](./src/two_sum.py)
