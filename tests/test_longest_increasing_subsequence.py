@@ -6,7 +6,11 @@ https://leetcode.com/problems/longest-increasing-subsequence
 
 from unittest import TestCase
 
-from src.longest_increasing_subsequence import MemoizationSolution, RecursiveSolution, Solution
+from src.longest_increasing_subsequence import (
+    MemoizationSolution,
+    RecursiveSolution,
+    Solution,
+)
 
 
 class TestSolution(TestCase):
@@ -50,7 +54,10 @@ class TestMemoizationSolution(TestCase):
 
     def test_5(self):
         exp = 6
-        assert MemoizationSolution().lengthOfLIS([3, 5, 6, 2, 5, 4, 19, 5, 6, 7, 12]) == exp
+        assert (
+            MemoizationSolution().lengthOfLIS([3, 5, 6, 2, 5, 4, 19, 5, 6, 7, 12])
+            == exp
+        )
 
 
 class TestRecursiveSolution(TestCase):
@@ -72,4 +79,6 @@ class TestRecursiveSolution(TestCase):
 
     def test_5(self):
         exp = 6
-        assert RecursiveSolution().lengthOfLIS([3, 5, 6, 2, 5, 4, 19, 5, 6, 7, 12]) == exp
+        assert (
+            RecursiveSolution().lengthOfLIS([3, 5, 6, 2, 5, 4, 19, 5, 6, 7, 12]) == exp
+        )

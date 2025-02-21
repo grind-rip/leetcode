@@ -6,7 +6,12 @@ https://leetcode.com/problems/longest-common-subsequence
 
 from unittest import TestCase
 
-from src.longest_common_subsequence import AlternativeSolution, MemoizationSolution, RecursiveSolution, Solution
+from src.longest_common_subsequence import (
+    AlternativeSolution,
+    MemoizationSolution,
+    RecursiveSolution,
+    Solution,
+)
 
 
 class TestSolution(TestCase):
@@ -24,7 +29,10 @@ class TestSolution(TestCase):
 
     def test_4(self):
         exp = 4
-        assert Solution().longestCommonSubsequence("pmjghexybyrgzczy", "hafcdqbgncrcbihkd") == exp
+        assert (
+            Solution().longestCommonSubsequence("pmjghexybyrgzczy", "hafcdqbgncrcbihkd")
+            == exp
+        )
 
 
 class TestAlternativeSolution(TestCase):
@@ -42,7 +50,12 @@ class TestAlternativeSolution(TestCase):
 
     def test_4(self):
         exp = 4
-        assert AlternativeSolution().longestCommonSubsequence("pmjghexybyrgzczy", "hafcdqbgncrcbihkd") == exp
+        assert (
+            AlternativeSolution().longestCommonSubsequence(
+                "pmjghexybyrgzczy", "hafcdqbgncrcbihkd"
+            )
+            == exp
+        )
 
 
 class TestMemoizationSolution(TestCase):
@@ -60,7 +73,12 @@ class TestMemoizationSolution(TestCase):
 
     def test_4(self):
         exp = 4
-        assert MemoizationSolution().longestCommonSubsequence("pmjghexybyrgzczy", "hafcdqbgncrcbihkd") == exp
+        assert (
+            MemoizationSolution().longestCommonSubsequence(
+                "pmjghexybyrgzczy", "hafcdqbgncrcbihkd"
+            )
+            == exp
+        )
 
 
 class TestRecursiveSolution(TestCase):
@@ -78,4 +96,9 @@ class TestRecursiveSolution(TestCase):
 
     def test_4(self):
         exp = 4
-        assert MemoizationSolution().longestCommonSubsequence("pmjghexybyrgzczy", "hafcdqbgncrcbihkd") == exp
+        assert (
+            MemoizationSolution().longestCommonSubsequence(
+                "pmjghexybyrgzczy", "hafcdqbgncrcbihkd"
+            )
+            == exp
+        )

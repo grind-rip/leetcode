@@ -52,13 +52,21 @@ class Solution:
         p0, p1 = 0, len(s) - 1
         while p0 < p1:
             c0, c1 = ord(s[p0]), ord(s[p1])
-            if (ASCII_0 <= c0 <= ASCII_9) or (ASCII_A <= c0 <= ASCII_Z) or (ASCII_a <= c0 <= ASCII_z):
+            if (
+                (ASCII_0 <= c0 <= ASCII_9)
+                or (ASCII_A <= c0 <= ASCII_Z)
+                or (ASCII_a <= c0 <= ASCII_z)
+            ):
                 if ASCII_A <= c0 <= ASCII_Z:
                     c0 = c0 + OFFSET
             else:
                 p0 = p0 + 1
                 continue
-            if (ASCII_0 <= c1 <= ASCII_9) or (ASCII_A <= c1 <= ASCII_Z) or (ASCII_a <= c1 <= ASCII_z):
+            if (
+                (ASCII_0 <= c1 <= ASCII_9)
+                or (ASCII_A <= c1 <= ASCII_Z)
+                or (ASCII_a <= c1 <= ASCII_z)
+            ):
                 if ASCII_A <= c1 <= ASCII_Z:
                     c1 = c1 + OFFSET
             else:

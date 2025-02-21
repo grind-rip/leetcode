@@ -72,4 +72,6 @@ class Solution:
         # Recursively apply the minimal subtree solution to all subtrees. Any
         # invalid subtree will cause the bitwise AND operation to return False
         # (0) for the entire tree.
-        return self._isValidBST(root.left, lo, root.val) and self._isValidBST(root.right, root.val, hi)
+        return self._isValidBST(root.left, lo, root.val) and self._isValidBST(
+            root.right, root.val, hi
+        )

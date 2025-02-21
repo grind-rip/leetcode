@@ -30,7 +30,9 @@ class TestSolution(TestCase):
 class TestSimplifiedSolution(TestCase):
     def test_1(self):
         exp = True
-        assert SimplifiedSolution().isPalindrome("A man, a plan, a canal: Panama") == exp
+        assert (
+            SimplifiedSolution().isPalindrome("A man, a plan, a canal: Panama") == exp
+        )
 
     def test_2(self):
         exp = False

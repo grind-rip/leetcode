@@ -13,7 +13,10 @@ from tests.utils import assert_tree
 class TestSolution(TestCase):
     def test_1(self):
         exp = [3, 9, 20, None, None, 15, 7]
-        assert_tree(Solution().buildTree(preorder=[3, 9, 20, 15, 7], inorder=[9, 3, 15, 20, 7]), exp)
+        assert_tree(
+            Solution().buildTree(preorder=[3, 9, 20, 15, 7], inorder=[9, 3, 15, 20, 7]),
+            exp,
+        )
 
     def test_2(self):
         exp = [-1]

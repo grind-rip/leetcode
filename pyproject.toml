@@ -20,6 +20,14 @@ dependencies = [
   "ruff"
 ]
 
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore:invalid escape sequence:SyntaxWarning"
+]
+
+[tool.ruff]
+line-length = 88
+
 [tool.ruff.lint]
 # A002: Argument is shadowing a Python builtin
 # E741: do not use variables named 'l', 'O', or 'I'

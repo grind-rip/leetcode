@@ -58,7 +58,9 @@ class Solution:
     Uses breadth-first search.
     """
 
-    def floodFill(self, image: list[list[int]], sr: int, sc: int, color: int) -> list[list[int]]:
+    def floodFill(
+        self, image: list[list[int]], sr: int, sc: int, color: int
+    ) -> list[list[int]]:
         # If the starting pixel is already our target color, return `image`,
         # since no pixels will be modified.
         if image[sr][sc] == color:
@@ -104,7 +106,9 @@ class SolutionDFS:
     Uses depth-first search.
     """
 
-    def floodFill(self, image: list[list[int]], sr: int, sc: int, color: int) -> list[list[int]]:
+    def floodFill(
+        self, image: list[list[int]], sr: int, sc: int, color: int
+    ) -> list[list[int]]:
         # If the starting pixel is already our target color, return `image`,
         # since no pixels will be modified.
         if image[sr][sc] == color:

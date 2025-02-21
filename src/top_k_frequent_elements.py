@@ -131,7 +131,9 @@ class QuickselectSolution:
         # is sorted anyway.
         return sorted(l[:k])
 
-    def quickselect(self, d: dict[int, int], l: list[int], left: int, right: int, k: int) -> int:
+    def quickselect(
+        self, d: dict[int, int], l: list[int], left: int, right: int, k: int
+    ) -> int:
         """
         Return the kth element (0-based) in the given list.
         """

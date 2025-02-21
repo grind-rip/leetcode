@@ -38,6 +38,8 @@ class Solution:
             return False
 
         if t1.val == t2.val:
-            return self.isSameTree(t1.left, t2.left) and self.isSameTree(t1.right, t2.right)
+            return self.isSameTree(t1.left, t2.left) and self.isSameTree(
+                t1.right, t2.right
+            )
 
         return False

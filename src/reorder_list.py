@@ -109,7 +109,9 @@ class Solution:
             curr = _next
         return prev
 
-    def mergeTwoLists(self, list1: ListNode | None, list2: ListNode | None) -> ListNode | None:
+    def mergeTwoLists(
+        self, list1: ListNode | None, list2: ListNode | None
+    ) -> ListNode | None:
         """
         Given the head of two singly linked-lists, merge them starting with the
         head of the first list.

@@ -6,7 +6,12 @@ https://leetcode.com/problems/best-time-to-buy-and-sell-stock
 
 from unittest import TestCase
 
-from src.best_time_to_buy_and_sell_stock import NaiveSolution, OptimizedNaiveSolution, SlidingWindowSolution, Solution
+from src.best_time_to_buy_and_sell_stock import (
+    NaiveSolution,
+    OptimizedNaiveSolution,
+    SlidingWindowSolution,
+    Solution,
+)
 
 
 class TestSolution(TestCase):

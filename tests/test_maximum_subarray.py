@@ -26,7 +26,9 @@ class TestSolution(TestCase):
 class TestTabularizationSolution(TestCase):
     def test_1(self):
         exp = 6
-        assert TabularizationSolution().maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]) == exp
+        assert (
+            TabularizationSolution().maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]) == exp
+        )
 
     def test_2(self):
         exp = 1

@@ -103,7 +103,9 @@ class Solution:
     Returns the LCA of `p` and `q` for the tree rooted at `root` recursively.
     """
 
-    def lowestCommonAncestor(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
+    def lowestCommonAncestor(
+        self, root: TreeNode, p: TreeNode, q: TreeNode
+    ) -> TreeNode:
         # Base Case: If root is a leaf (None) or if root is p or q, return
         # root.
         if not root or root in (p, q):
@@ -135,7 +137,9 @@ class IterativeSolution:
     Returns the LCA of `p` and `q` for the tree rooted at `root` iteratively.
     """
 
-    def lowestCommonAncestor(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
+    def lowestCommonAncestor(
+        self, root: TreeNode, p: TreeNode, q: TreeNode
+    ) -> TreeNode:
         stack: deque[TreeNode] = deque([root])
         parents: dict[TreeNode, TreeNode | None] = {root: None}
         curr: TreeNode = root

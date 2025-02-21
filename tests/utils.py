@@ -131,7 +131,9 @@ def _create_binary_tree_from_list(l: list[int | None], i: int) -> TreeNode | Non
     return node
 
 
-def create_bfs_list_from_binary_tree(*, root: TreeNode | None, values_only: bool = True) -> list[TreeNode | T]:
+def create_bfs_list_from_binary_tree(
+    *, root: TreeNode | None, values_only: bool = True
+) -> list[TreeNode | T]:
     """
     Creates a list of nodes in breadth-first search order given the root node
     of a binary tree. If values_only is False, the list contains the TreeNode

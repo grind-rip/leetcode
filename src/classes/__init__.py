@@ -22,7 +22,9 @@ class TreeNode(Generic[T]):
     A tree node in a binary tree.
     """
 
-    def __init__(self, val: T, left: Self | None = None, right: Self | None = None) -> None:
+    def __init__(
+        self, val: T, left: Self | None = None, right: Self | None = None
+    ) -> None:
         self.val: T = val
         self.left: TreeNode[T] | None = right
         self.right: TreeNode[T] | None = left

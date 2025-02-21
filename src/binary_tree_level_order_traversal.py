@@ -49,7 +49,9 @@ class SolutionDFS:
         self._levelOrder(root, 0, levels)
         return levels
 
-    def _levelOrder(self, root: TreeNode | None, level: int, levels: list[list[int]]) -> None:
+    def _levelOrder(
+        self, root: TreeNode | None, level: int, levels: list[list[int]]
+    ) -> None:
         if not root:
             return
         if len(levels) < level + 1:

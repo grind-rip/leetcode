@@ -22,7 +22,9 @@ class TestSolution(TestCase):
 class TestSolutionDFS(TestCase):
     def test_1(self):
         exp = [[2, 2, 2], [2, 2, 0], [2, 0, 1]]
-        assert SolutionDFS().floodFill([[1, 1, 1], [1, 1, 0], [1, 0, 1]], 1, 1, 2) == exp
+        assert (
+            SolutionDFS().floodFill([[1, 1, 1], [1, 1, 0], [1, 0, 1]], 1, 1, 2) == exp
+        )
 
     def test_2(self):
         exp = [[0, 0, 0], [0, 0, 0]]
