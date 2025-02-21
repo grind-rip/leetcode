@@ -8,8 +8,6 @@ NOTES
     have to know that you should use this algorithm to detect a cycle in a
     linked list. This algorithm can also be used for directed graphs.
 
-    See: https://en.wikipedia.org/wiki/Cycle_detection
-
 This solution has O(n) time complexity and O(1) space complexity.
 """
 
