@@ -16,3 +16,4 @@
 - [ ] Add recursive approach to 'Binary Tree Right Side View'
 - [ ] Move `utils.py` to `src/`
 - [ ] Use `serialize_binary_tree()` and `deserialize_binary_tree()`
+- [ ] Use consistent class names (i.e., `Solution`, `AlternativeSolution`, etc.)
