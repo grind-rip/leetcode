@@ -54,6 +54,8 @@ A collection of LeetCode solutions
 
 [Middle of the Linked List](./src/middle_of_the_linked_list.py)
 
+[Minimum Size Subarray Sum](./src/minimum_size_subarray_sum.py)
+
 [Product of Array Except Self](./src/product_of_array_except_self.py)
 
 [Remove Nth Node From End of List](./src/remove_nth_node_from_end_of_list.py)
