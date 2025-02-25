@@ -40,6 +40,8 @@ A collection of LeetCode solutions
 
 [Longest Increasing Subsequence](./src/longest_increasing_subsequence.py)
 
+[Longest Substring Without Repeating Characters](./src/test_longest_substring_without_repeating_characters.py)
+
 [Lowest Common Ancestor of a Binary Search Tree](./src/lowest_common_ancestor_of_a_binary_search_tree.py)
 
 [Lowest Common Ancestor of a Binary Tree](./src/lowest_common_ancestor_of_a_binary_tree.py)
