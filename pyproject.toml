@@ -35,10 +35,25 @@ line-length = 88
 # N803 Argument name should be lowercase
 # N806: Variable in function should be lowercase
 # N999: Invalid module name
+# PLR2004 Magic value used in comparison
 # RET505: Unnecessary `elif` after `return` statement
 # RUF002: Docstring contains ambiguous `ν`
 # RUF003: Docstring contains ambiguous `ν`
 # SIM108 Use ternary operator
 # T201: `print` found
 # W605: invalid escape sequence '\ '
-ignore = ["A002", "E741", "N802", "N803", "N806", "N999", "RET505", "RUF002", "RUF003", "SIM108", "T201", "W605"]
+ignore = [
+  "A002",
+  "E741",
+  "N802",
+  "N803",
+  "N806",
+  "N999",
+  "PLR2004",
+  "RET505",
+  "RUF002",
+  "RUF003",
+  "SIM108",
+  "T201",
+  "W605"
+]

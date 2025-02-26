@@ -10,6 +10,7 @@ A general solution to 'Longest Substring with At Most Two Distinct Characters'.
 Simply substitute 'k' for '2'. Easy bag.
 """
 
+
 class Solution:
     def lengthOfLongestSubstringKDistinct(self, s: str, k: int) -> int:
         left, right, maximum_size = 0, 0, 0
