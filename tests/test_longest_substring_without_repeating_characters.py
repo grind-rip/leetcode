@@ -6,7 +6,10 @@ https://leetcode.com/problems/longest-substring-without-repeating-characters
 
 from unittest import TestCase
 
-from src.longest_substring_without_repeating_characters import Solution, CanonicalSolution
+from src.longest_substring_without_repeating_characters import (
+    CanonicalSolution,
+    Solution,
+)
 
 
 class TestSolution(TestCase):

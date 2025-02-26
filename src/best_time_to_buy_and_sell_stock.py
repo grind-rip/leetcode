@@ -10,12 +10,13 @@ NOTES
 
 Sliding Window
 --------------
-The sliding window technique uses two pointers that maintain a "window" of
+The sliding window technique uses two pointers which maintain a "window" of
 elements that moves through an array or string in a specific way. The window
-can grow or shrink depending on certain conditions, but do not cross. This
-ensures that each value in the array is only accessed at most twice and the
-time complexity is still O(n). This approach is particularly useful when you
-need to find a subarray or substring that meets certain criteria.
+can grow or shrink depending on certain conditions, but the pointers do not
+cross. This ensures that each value in the array is only accessed at most twice
+and the time complexity is still O(n). This is referred to as amortized
+analysis. The sliding window approach is particularly useful when you need to
+find a subarray or substring that meets certain criteria.
 """
 
 import sys
