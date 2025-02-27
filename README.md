@@ -64,6 +64,8 @@ A collection of LeetCode solutions
 
 [Minimum Size Subarray Sum](./src/minimum_size_subarray_sum.py)
 
+[Permutation in String](./src/permutation_in_string.py)
+
 [Product of Array Except Self](./src/product_of_array_except_self.py)
 
 [Remove Nth Node From End of List](./src/remove_nth_node_from_end_of_list.py)
