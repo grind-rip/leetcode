@@ -20,7 +20,7 @@ So, given this constraint, we can assume that the original array 'chars' must
 be used to store the solution, the encoded string. Given that the array of the
 encoded string will contain at most 'n' elements, this is tractable.
 
-The solution is pretty straight-forward and can be solved in linear runtime
+The solution is pretty straightforward and can be solved in linear runtime
 complexity, O(n), and constant space complexity, O(1).
 
 We start with two pointers:

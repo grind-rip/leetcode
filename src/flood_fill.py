@@ -6,7 +6,7 @@ https://leetcode.com/problems/flood-fill
 NOTES
   * Use breadth-first search.
 
-This problem is very straight-forward if you use breadth-first search. Simply
+This problem is very straightforward if you use breadth-first search. Simply
 add adjacent pixels that share the same color as the starting pixel to the
 queue and run the algorithm.
 

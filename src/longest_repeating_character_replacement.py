@@ -13,7 +13,7 @@ when:
   window size - frequency of most common character ≤ k
 
 Initially, I inverted the logic, searching instead for the longest substring
-with > k replacements. The correct solution is pretty straight-forward *if* you
+with > k replacements. The correct solution is pretty straightforward *if* you
 are working from the above premise. Additionally, I've added the canonical
 sliding window implementation. Its form should look familiar...
 """
