@@ -50,4 +50,4 @@ class Solution:
                 left += 1
             right += 1
 
-        return s[start:end + 1] if minimum_size < sys.maxsize else ""
+        return s[start : end + 1] if minimum_size < sys.maxsize else ""
