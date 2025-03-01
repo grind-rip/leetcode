@@ -90,6 +90,8 @@ A collection of LeetCode solutions
 
 [Top K Frequent Elements](./src/top_k_frequent_elements.py)
 
+[Sort Colors](./src/sort_colors.py)
+
 [Two Sum](./src/two_sum.py)
 
 [Valid Anagram](./src/valid_anagram.py)
