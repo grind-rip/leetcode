@@ -58,6 +58,8 @@ A collection of LeetCode solutions
 
 [Merge k Sorted Lists](./src/merge_k_sorted_lists.py)
 
+[Merge Sorted Array](./src/merge_sorted_array.py)
+
 [Merge Strings Alternately](./src/merge_strings_alternately.py)
 
 [Merge Two Sorted Lists](./src/merge_two_sorted_lists.py)
