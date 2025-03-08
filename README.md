@@ -40,6 +40,8 @@ A collection of LeetCode solutions
 
 [Longest Increasing Subsequence](./src/longest_increasing_subsequence.py)
 
+[Longest Palindromic Substring](./src/longest_palindromic_substring.py)
+
 [Longest Repeating Character Replacement](./src/longest_repeating_character_replacement.py)
 
 [Longest Substring with At Most K Distinct Characters](./src/longest_substring_with_at_most_k_distinct_characters.py)
