@@ -223,22 +223,22 @@ class ManachersAlgorithmSolution:
             while center <= original_center + original_radius:
                 # Calculate the "mirrored" center for the current center.
                 mirrored_center = original_center - (center - original_center)
-                # Calculate the maximum possible radius of the palindrome centered
-                # at `center`.
+                # Calculate the maximum possible radius of the palindrome
+                # centered at `center`.
                 max_radius = original_center + original_radius - center
 
-                # Case 1: Palindrome of mirrored center lies entirely within the
-                # original palindrome.
+                # Case 1: Palindrome of mirrored center lies entirely within
+                # the original palindrome.
                 if palindrome_radii[mirrored_center] < max_radius:
                     palindrome_radii[center] = palindrome_radii[mirrored_center]
                     center += 1
-                # Case 2: Palindrome of mirrored center extends beyond the boundary
-                # of the original palindrome.
+                # Case 2: Palindrome of mirrored center extends beyond the
+                # boundary of the original palindrome.
                 elif palindrome_radii[mirrored_center] > max_radius:
                     palindrome_radii[center] = max_radius
                     center += 1
-                # Case 3: Palindrome of mirrored center extends exactly up to the
-                # boundary of the original palindrome.
+                # Case 3: Palindrome of mirrored center extends exactly up to
+                # the boundary of the original palindrome.
                 else:
                     radius = max_radius
                     break
