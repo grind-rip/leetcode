@@ -70,6 +70,8 @@ A collection of LeetCode solutions
 
 [Minimum Window Substring](./src/minimum_window_substring.py)
 
+[Palindromic Substrings](./src/palindromic_substrings.py)
+
 [Permutation in String](./src/permutation_in_string.py)
 
 [Product of Array Except Self](./src/product_of_array_except_self.py)
