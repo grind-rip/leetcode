@@ -72,6 +72,8 @@ A collection of LeetCode solutions
 
 [Minimum Window Substring](./src/minimum_window_substring.py)
 
+[Next Permutation](./src/next_permutation.py)
+
 [Palindromic Substrings](./src/palindromic_substrings.py)
 
 [Permutation in String](./src/permutation_in_string.py)
