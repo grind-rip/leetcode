@@ -22,6 +22,8 @@ A collection of LeetCode solutions
 
 [Contains Duplicate](./src/contains_duplicate.py)
 
+[Daily Temperatures](./src/daily_temperatures.py)
+
 [Find Median from Data Stream](./src/find_median_from_data_stream.py)
 
 [Flood Fill](./src/flood_fill.py)
