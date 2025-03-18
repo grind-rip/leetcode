@@ -76,6 +76,8 @@ A collection of LeetCode solutions
 
 [Next Permutation](./src/next_permutation.py)
 
+[Number of Visible People in a Queue](./src/number_of_visible_people_in_a_queue.py)
+
 [Palindromic Substrings](./src/palindromic_substrings.py)
 
 [Permutation in String](./src/permutation_in_string.py)
