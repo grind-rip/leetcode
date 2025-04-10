@@ -47,6 +47,7 @@ class OptimizedSolution:
     index of the last interval is greater than or equal to the start index of
     the current interval.
     """
+
     def merge(self, intervals: list[list[int]]) -> list[list[int]]:
         intervals.sort(key=lambda x: x[0])
         merged: list[list[int]] = []

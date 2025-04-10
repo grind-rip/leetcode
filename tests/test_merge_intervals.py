@@ -3,9 +3,10 @@
 
 https://leetcode.com/problems/merge-intervals
 """
+
 from unittest import TestCase
 
-from src.merge_intervals import Solution, OptimizedSolution
+from src.merge_intervals import OptimizedSolution, Solution
 
 
 class TestSolution(TestCase):
