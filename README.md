@@ -30,6 +30,8 @@ A collection of LeetCode solutions
 
 [House Robber](./src/house_robber.py)
 
+[Insert Interval](./src/insert_interval.py)
+
 [Invert Binary Tree](./src/invert_binary_tree.py)
 
 [K Closest Points to Origin](./src/k_closest_points_to_origin.py)
