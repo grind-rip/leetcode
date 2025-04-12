@@ -80,6 +80,8 @@ A collection of LeetCode solutions
 
 [Next Permutation](./src/next_permutation.py)
 
+[Non Overlapping Intervals](./src/non_overlapping_intervals.py)
+
 [Number of Visible People in a Queue](./src/number_of_visible_people_in_a_queue.py)
 
 [Palindromic Substrings](./src/palindromic_substrings.py)
