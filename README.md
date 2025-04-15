@@ -62,6 +62,8 @@ A collection of LeetCode solutions
 
 [Maximum Subarray](./src/maximum_subarray.py)
 
+[Meeting Rooms](./src/meeting_rooms.py)
+
 [Merge Intervals](./src/merge_intervals.py)
 
 [Merge k Sorted Lists](./src/merge_k_sorted_lists.py)
