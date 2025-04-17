@@ -12,8 +12,29 @@ NOTES
     The minimum number of conference rooms required is then the maximum size of
     the heap.
 
-I really love this one–mainly due to the elegant use of a heap and because I
-just love heaps <3.
+I really love this one—mainly due to the elegant use of a heap, and because I
+just love heaps. <3
+
+Time Complexity
+---------------
+  * There are three operations that contribute to this solution's time
+    complexity:
+
+        1. Sorting the array: O(nlog n)
+        2. Removing the smallest element from the heap: O(log n)
+        3. Inserting an element into the heap: O(log n)
+
+    In the worst case, we perform the delete-min operation n times. In all
+    cases, we perform the insert operation n times. Therefore, the combined
+    time complexity is:
+
+        O(nlog n) + O(nlog n) + O(nlog n)
+
+    which condenses to simply O(nlog n).
+
+Space Complexity
+----------------
+  * The min-heap has a worst-case space complexity of O(n).
 """
 
 import heapq
@@ -25,11 +46,8 @@ class Solution:
         heap: list[int] = []
         min_rooms = 0
         for interval in intervals:
-            if len(heap) == 0:
-                heapq.heappush(heap, interval[1])
-            else:
-                if heap[0] <= interval[0]:
-                    heapq.heappop(heap)
-                heapq.heappush(heap, interval[1])
+            if heap and heap[0] <= interval[0]:
+                heapq.heappop(heap)
+            heapq.heappush(heap, interval[1])
             min_rooms = max(min_rooms, len(heap))
         return min_rooms
